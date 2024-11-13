@@ -8,7 +8,14 @@ public class Tabuleiro {
 
     Tabuleiro(String caminho){
         propriedades= new ArrayList<Propriedade>();
-        Scanner scan = new Scanner(new FileReader(caminho));
-        scan.ne;
+        try {
+            Scanner scan = new Scanner(new FileReader(caminho));
+            while (scan.hasNextLine()) {
+                String line = scan.nextLine();
+                String valores[] = line.split(  " ");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
