@@ -24,4 +24,6 @@ public class Propriedade {
     public int getvalorvenda(){
         return valorvenda;
     }
+
+    
 }
